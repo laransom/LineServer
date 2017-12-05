@@ -6,7 +6,7 @@ Simple API that returns contents of specified line from a .txt file
 
 To build the system run build.sh
 
-To run the server run run.sh <text-file>. Server will only start if a
+To run the server run run.sh `<text-file>`. Server will only start if a
 valid .txt file is added
 
 ## How It Works
@@ -55,7 +55,7 @@ LineServer app and over Grape because I had worked with Sinatra before.
 I spent 4 hours creating this service. About 15% of that was researching, 50% of
 that was getting the server up and working and 35% testing and documenting. I
 did not have time to optimize the pre-processing and it is problematic. Also, I
-have not tests so I would consider this service incomplete. The other things I
+have no tests so I would consider this service incomplete. The other things I
 don't like is that my error handling is inconsistent, and I have a function that
 returns 2 values, which is something I would refactor out out. If I had more
 time I would prioritize writing a few tests for my file_helper module, then
