@@ -1,12 +1,11 @@
-require 'pry'
 module FileHelper
 
     def self.parse_text_file(file_path)
         @lines = {}
         line_count = 0
         begin
-            File.open(file_path, 'r').each_line.with_index do |line, index|
-                @lines[index] = line.chomp
+            File.open(file_path, 'r').each_line do |line|
+                @lines[line_count] = line.chomp
                 line_count += 1
             end
         rescue StandardError => error

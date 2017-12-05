@@ -10,7 +10,7 @@ class LineServer < Sinatra::Base
         line_key = params["line_index"].to_i
 
         if line_key > 0 && line_key <= LINE_COUNT
-            LINES_HASH[line_key-1]
+            return_value = LINES_HASH[line_key-1]
         else
             halt(413, "413: payload too large")
         end
